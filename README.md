@@ -25,12 +25,11 @@ the best performance on several benchmarks in terms of both
 performance and efficiency.
 
 ```
-@inproceedings{
-    chen2022cpr,
-    title={ASCL: Adaptive Soft Contrastive Learning},
-    author={Chen Feng and Ioannis Patras},
-    booktitle={International Conference on Pattern Recognition},
-    year={2022},
+@article{feng2022adaptive,
+  title={Adaptive Soft Contrastive Learning},
+  author={Feng, Chen and Patras, Ioannis},
+  journal={arXiv preprint arXiv:2207.11163},
+  year={2022}
 }
 ```
 
