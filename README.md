@@ -4,7 +4,7 @@
     <img src="./sources/framework.png" alt="drawing" width="800"/>
 </p>
 
-This is the official PyTorch implementation of [ASCL](https://arxiv.org/abs/xxx.xxx). 
+This is the official PyTorch implementation of [ASCL](https://arxiv.org/abs/2207.11163). 
 
 ### Abstract
 Self-supervised learning has recently achieved great
