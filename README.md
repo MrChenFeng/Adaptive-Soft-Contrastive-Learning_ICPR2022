@@ -24,7 +24,8 @@ for existing self-supervised learning frameworks, ASCL achieves
 the best performance on several benchmarks in terms of both
 performance and efficiency.
 
-```
+
+```bibtex
 @INPROCEEDINGS{ASCL,  
 author={Feng, Chen and Patras, Ioannis},  
 booktitle={2022 26th International Conference on Pattern Recognition (ICPR)},   
@@ -36,7 +37,7 @@ pages={2721-2727},
 doi={10.1109/ICPR56361.2022.9956660}
 }
 ```
-
+Please considering cite our paper if you find this repo useful.
 ### Preparation
 - pytorch
 - tqdm
