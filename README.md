@@ -37,7 +37,7 @@ pages={2721-2727},
 doi={10.1109/ICPR56361.2022.9956660}
 }
 ```
-Please considering cite our paper if you find this repo useful.
+Please considering _cite our paper and star this repo_ if you find this repo useful.
 ### Preparation
 - pytorch
 - tqdm
