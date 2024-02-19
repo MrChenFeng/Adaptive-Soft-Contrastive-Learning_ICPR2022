@@ -33,12 +33,12 @@ parser.add_argument('--batch-size', default=256, type=int, metavar='N', help='mi
 parser.add_argument('--wd', default=5e-4, type=float, metavar='W', help='weight decay')
 parser.add_argument('--m', default=0.99, type=float, help='moco momentum of updating key encoder')
 parser.add_argument('--dim', default=128, type=int, help='feature dimension')
+parser.add_argument('--mem_size', default=4096, type=int, help='memorybank size')
 parser.add_argument('--resume', action='store_true', help='resume from previous run')
 parser.add_argument('--gpuid', default='0', type=str, help='gpuid')
 
 # model configs:
-parser.add_argument('--nn_num', default=1, type=int, help='number of neighbors')
-parser.add_argument('--K', default=4096, type=int, help='queue size; number of negative keys')
+parser.add_argument('--K', default=1, type=int, help='number of neighbors')
 parser.add_argument('--t1', default=0.1, type=float, help='softmax temperature for student')
 parser.add_argument('--t2', default=0.05, type=float, help='softmax temperature for teacher')
 parser.add_argument('--aug', default='weak_augment', choices=['weak_augment', 'strong_augment'], type=str,
@@ -236,8 +236,8 @@ def main():
 
     ############################################### Init ####################################################
     # create model
-    model = ASCL(dataset=args.dataset, model = args.model, dim=args.dim, K=args.K, m=args.m, T1=args.t1, T2=args.t2, arch=args.arch,  type=args.type,
-                 nn_num=args.nn_num).cuda()
+    model = ASCL(dataset=args.dataset, model = args.model, dim=args.dim, mem_size=args.mem_size, m=args.m, T1=args.t1, T2=args.t2, arch=args.arch,  type=args.type,
+                 nn_num=args.K).cuda()
 
     # logs
     args.results_dir = f'{args.dataset}_{args.model}_{args.type}_{args.epochs}_{args.aug}_{args.nn_num}_{args.t1}_{args.t2}'
