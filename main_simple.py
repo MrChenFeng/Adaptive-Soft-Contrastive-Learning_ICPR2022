@@ -36,6 +36,7 @@ parser.add_argument('--dim', default=128, type=int, help='feature dimension')
 parser.add_argument('--mem_size', default=4096, type=int, help='memorybank size')
 parser.add_argument('--resume', action='store_true', help='resume from previous run')
 parser.add_argument('--gpuid', default='0', type=str, help='gpuid')
+parser.add_argument('--run_id', default='0', type=str, help='run_id')
 
 # model configs:
 parser.add_argument('--K', default=1, type=int, help='number of neighbors')
