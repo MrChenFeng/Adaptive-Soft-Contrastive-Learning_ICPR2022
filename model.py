@@ -91,7 +91,7 @@ class ASCL(nn.Module):
     def __init__(self, dataset='cifar10', model='moco', dim=128, mem_size=4096, m=0.99, T1=0.1, T2=0.05, arch='resnet18', type='ascl', nn_num=1):
         super(ASCL, self).__init__()
 
-        self.K = K
+        self.K = mem_size
         self.m = m
         self.T1 = T1
         self.T2 = T2
