@@ -115,7 +115,7 @@ class ASCL(nn.Module):
         self.max_entropy = np.log(self.K)
 
         # create the queue
-        self.register_buffer("queue", torch.randn(dim, K))
+        self.register_buffer("queue", torch.randn(dim, self.K))
         self.queue = nn.functional.normalize(self.queue, dim=0)
         self.register_buffer('labels', -1 * torch.ones(self.K).long())
         self.register_buffer("queue_ptr", torch.zeros(1, dtype=torch.long))
