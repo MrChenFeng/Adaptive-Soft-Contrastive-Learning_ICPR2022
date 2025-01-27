@@ -241,7 +241,7 @@ def main():
                  nn_num=args.K).cuda()
 
     # logs
-    args.results_dir = f'{args.dataset}_{args.model}_{args.type}_{args.epochs}_{args.aug}_{args.nn_num}_{args.t1}_{args.t2}'
+    args.results_dir = f'{args.dataset}_{args.model}_{args.type}_{args.epochs}_{args.aug}_{args.K}_{args.t1}_{args.t2}'
     if not os.path.exists(args.run_id):
         os.mkdir(args.run_id)
     if not os.path.exists(f'{args.run_id}/{args.results_dir}'):
