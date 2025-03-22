@@ -37,7 +37,8 @@ pages={2721-2727},
 doi={10.1109/ICPR56361.2022.9956660}
 }
 ```
-Please considering **_cite our paper and star this repo_** if you find this repo useful.
+Please considering **_cite our paper and star this repo_** if you find this repo useful. Before you press the button to raise an issue, first ask yourself whether you have enough respect for others' unpaid open-source work. I am increasingly noticing that today's scholars lack respect for others, which is a very unfortunate phenomenon.
+
 ### Preparation
 - pytorch
 - tqdm
